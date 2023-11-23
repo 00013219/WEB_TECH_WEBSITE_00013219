@@ -1,0 +1,520 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    
+}
+
+/* MENU */
+
+nav {
+    padding: 15px;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: right;
+    box-shadow: 0 4px 2px -2px gray;
+    
+}
+
+nav a {
+    font-weight: bold;
+    display: inline-block;
+    color: rgb(46, 45, 112);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav .logo img {
+    float: left; 
+    height: 50px;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    background-color: #bead83;
+}
+
+.last_feeature{
+    margin-right: 45px;
+}
+
+.menu button{
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #decca2;
+    background-color: rgb(46, 45, 112);
+    border: 0;
+    border-style: solid;
+    transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #555;
+}
+
+/* SLIDER */
+
+.slider {
+    position: relative;
+    margin-top: 60px;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    max-height: 98vh;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: opacity 1s ease-in-out;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.text h2 {
+    margin: 0;
+    font-size: 60px;
+}
+
+.text p {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #decca2;
+    background-color: rgb(46, 45, 112);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+
+.active {
+    background-color: #555;
+}
+
+.fade {
+    animation: fade 0.8s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ABOUT HISTORY */
+
+.history {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.history-text {
+    flex: 1;
+    padding-right: 100px;
+}
+
+.history-text h2 {
+    color: #333;
+}
+
+.history-text p {
+    color: #555;
+}
+
+.history-image {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.history-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+.history-image p{
+    font-size: 12px;
+    text-align: center;
+    color: #555;
+}
+
+/* AWARDS */
+.awards-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.awards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.award {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid rgb(46, 45, 112);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+    color: #333;
+}
+
+.award:hover{
+    color: white;
+    background-color: rgb(46, 45, 112);
+}
+
+.award img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* NEWS */
+
+.news-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.latest-news-container {
+    width: 100%;
+    max-width: 950px; 
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px; 
+    overflow: hidden;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.news-image {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 30px;
+    align-self: center;
+}
+
+.news-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #decca2;
+    background-color: rgb(46, 45, 112);
+    transition: background-color 0.3s ease;
+}
+
+
+
+.learn-more-btn:hover {
+    background-color: #bead83;
+}
+
+.news-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+
+/* BOTTOM */
+
+.bottom {
+    background-color: rgb(46, 45, 112);
+    width: 100%;
+    padding: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bottom-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+.bottom h5{
+    color: rgb(255, 0, 0); 
+    margin-top: 50px;
+}
+
+/* LOGIN PAGE STYLE */
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+}
+
+.login-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #6b6b6b;
+}
+
+.login-form input {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.login-form button {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #decca2;
+    background-color: rgb(46, 45, 112);
+    border: 0;
+    border-style: solid;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #555;
+}
+
+/* PROJECTS */
+.projects-div {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.project-section {
+    margin: 30px 0;
+}
+
+.project-section h2 {
+    color: #333333;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.project {
+    display: flex;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.project img {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-left: 15px;
+    color: #555;
+    line-height: 2;
+}
+
+.project img {
+    border: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #fff;
+}
+
+/* ABOUT_US PAGE */
+
+
+.about-us {
+    max-width: 800px;
+    margin: 100px auto auto auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.about-us h1, .about-us h2 {
+    color: #333;
+}
+
+.about-us p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-us img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+}
+
+/* CONTACT US */
+
+.contact-us {
+    max-width: 800px;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.contact-us p {
+    margin-bottom: 15px;
+}
+
+.contact-us form {
+    margin-top: 20px;
+}
+
+.contact-us label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-us input, .contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.contact-us input[type="submit"] {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #decca2;
+    background-color: rgb(46, 45, 112);
+    border: 0;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-us button:hover {
+    background-color: #555;
+}
+
+/* LATEST NEWS */
+
+.latest-news{
+    max-width: 800px;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.latest-news p {
+    margin-bottom: 15px;
+    line-height: 2;
+}
+
+.news {
+    margin-bottom: 30px;
+}
+
+.news img {
+    max-width: 100%;
+    border-radius: 8px;
+}
